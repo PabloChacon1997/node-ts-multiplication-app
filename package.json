@@ -7,17 +7,24 @@
     "dev": "ts-node src/app.ts -b 10",
     "dev:nodemon": "nodemon -b 7",
     "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js"
+    "start": "npm run build && node dist/app.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.0.0",
     "@types/yargs": "^17.0.35",
+    "jest": "^30.2.0",
     "nodemon": "^3.1.11",
     "rimraf": "^6.1.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
